@@ -14,28 +14,28 @@ import UIKit
 
 protocol ___VARIABLE_sceneName___InteractorInput
 {
-  func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
+    func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
 }
 
 protocol ___VARIABLE_sceneName___InteractorOutput
 {
-  //var name: String { get set }
+    //var name: String { get set }
 }
 
 class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___InteractorInput, ___VARIABLE_sceneName___InteractorOutput
 {
-  var presenter: ___VARIABLE_sceneName___PresenterInput?
-  var worker: ___VARIABLE_sceneName___Worker?
-  //var name: String = ""
-  
-  // MARK: Do something
-  
-  func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
-  {
-    worker = ___VARIABLE_sceneName___Worker()
-    worker?.doSomeWork()
+    var presenter: ___VARIABLE_sceneName___PresenterInput?
+    var worker: ___VARIABLE_sceneName___Worker?
+    //var name: String = ""
     
-    let response = ___VARIABLE_sceneName___.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+    // MARK: Do something
+    
+    func doSomething(request: ___VARIABLE_sceneName___.Something.Request)
+    {
+        worker = ___VARIABLE_sceneName___Worker()
+        worker?.doSomeWork()
+        
+        let response = ___VARIABLE_sceneName___.Something.Response()
+        presenter?.presentSomething(response: response)
+    }
 }
