@@ -22,8 +22,7 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
     var interactor: ___VARIABLE_sceneName___InteractorInput?
     var router: (NSObjectProtocol & ___VARIABLE_sceneName___RouterInput & ___VARIABLE_sceneName___RouterOutput)?
     
-    // MARK: Object lifecycle
-    
+    // MARK: - Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
     {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -36,8 +35,7 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
         setup()
     }
     
-    // MARK: Setup
-    
+    // MARK: - Setup
     private func setup()
     {
         let viewController = self
@@ -52,8 +50,7 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
         router.dataStore = interactor
     }
     
-    // MARK: Routing
-    
+    // MARK: - Routing
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if let scene = segue.identifier {
@@ -64,15 +61,14 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
         }
     }
     
-    // MARK: View lifecycle
-    
+    // MARK: - View lifecycle
     override func viewDidLoad()
     {
         super.viewDidLoad()
         doSomething()
     }
     
-    // MARK: Do something
+    // MARK: - Do something
     
     //@IBOutlet weak var nameTextField: UITextField!
     
@@ -82,6 +78,7 @@ class ___VARIABLE_sceneName___ViewController: UICollectionViewController, ___VAR
         interactor?.doSomething(request: request)
     }
     
+    // MARK: - ___VARIABLE_sceneName___ViewControllerInput
     func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
     {
         //nameTextField.text = viewModel.name

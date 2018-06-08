@@ -21,8 +21,7 @@ class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInput
 {
     weak var viewController: ___VARIABLE_sceneName___ViewControllerInput?
     
-    // MARK: Do something
-    
+    // MARK: - Do something
     func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
     {
         let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
