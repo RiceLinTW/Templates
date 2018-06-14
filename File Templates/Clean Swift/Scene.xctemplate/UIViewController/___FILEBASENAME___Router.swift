@@ -50,7 +50,7 @@ class ___VARIABLE_sceneName___Router: NSObject, ___VARIABLE_sceneName___RouterIn
     //}
     
     // MARK: - Passing data
-    //func passDataToSomewhere(source: ___VARIABLE_sceneName___DataStore, destination: inout SomewhereDataStore)
+    //func passDataToSomewhere(source: ___VARIABLE_sceneName___InteractorOutput, destination: inout SomewhereInteractorOutput)
     //{
     //  destination.name = source.name
     //}
