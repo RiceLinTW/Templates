@@ -12,18 +12,15 @@
 
 import UIKit
 
-protocol ___VARIABLE_sceneName___PresenterInput
-{
+protocol ___VARIABLE_sceneName___PresenterInput {
     func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
 }
 
-class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInput
-{
+class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresenterInput {
     weak var viewController: ___VARIABLE_sceneName___ViewControllerInput?
     
     // MARK: - Do something
-    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
-    {
+    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response) {
         let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
         viewController?.displaySomething(viewModel: viewModel)
     }
